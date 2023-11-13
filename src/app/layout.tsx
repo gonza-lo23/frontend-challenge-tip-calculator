@@ -15,7 +15,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} >
+        <main className=' App
+        flex h-screen   
+        justify-center items-center
+        bg-cyan-100 '>
+         <div className='m-auto '>
+          <div className='m-10 mt-2 text-gray-600 grid justify-center font-bold items-center'>
+          <p className='text-xl'>S  P  L  I</p>
+          <p className='text-xl'>T  T  E  R</p>
+          </div>
+        <div className='
+        rounded-xl
+        bg-white shadow
+        align-center
+        '>
+        {children}
+        </div>
+        </div>
+        </main>
+        </body>
     </html>
   )
 }
